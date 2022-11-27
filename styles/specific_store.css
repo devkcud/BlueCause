@@ -1,0 +1,64 @@
+#items {
+  list-style: none;
+}
+
+#items > li {
+  position: relative;
+
+  width: 20rem;
+  height: 30rem;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+#items > li h2 {
+  font-size: 3rem;
+  text-align: center;
+
+  width: 100%;
+}
+
+#items > li p {
+  text-align: center;
+
+  font-size: x-large;
+}
+
+#items > li span.discount {
+  position: absolute;
+  right: -10px;
+
+  background-color: #f00;
+  color: #fff;
+
+  font-weight: 600;
+
+  font-style: italic;
+
+  padding: 10px;
+
+  border-radius: 50px 20px 20px 50px;
+  border: 1px solid #000;
+}
+
+#items > li img {
+  width: 200px;
+
+  margin: auto;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+}
+
+#items > li .btns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
