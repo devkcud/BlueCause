@@ -44,7 +44,7 @@ function createItem(name) {
 
     <div class="btns">
       <a href="../store/mais/${name}" class="btn btn-dark">Mais</a>
-      <a href="../store/static/${name
+      <a href="../static/store/${name
         .replaceAll(' ', '-')
         .toLowerCase()}.html" class="btn btn-success">Comprar</a>
     </div>
