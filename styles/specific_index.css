@@ -44,7 +44,7 @@ header h1 {
 .bg-img {
   z-index: -1;
 
-  background-image: url(/img/bg.jpeg);
+  background-image: url(../img/bg.jpeg);
   background-size: cover;
   background-position: 0 50%;
 
