@@ -1,3 +1,7 @@
 # Blue Cause site
 
-A website for my school project.
+Use a extensão `LiveServer` no Visual Studio Code ou o comando (requer npm):
+
+```sh
+npx serve .
+```
