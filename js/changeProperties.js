@@ -5,7 +5,7 @@ const itemName = document
   .textContent.normalize('NFD')
   .replace(/[\u0300-\u036f]/g, '');
 
-document.getElementById('image').src = `/img/products/${itemName.toLocaleLowerCase()}.png`;
+document.getElementById('image').src = `../img/products/${itemName.toLocaleLowerCase()}.png`;
 
 const currentPrice = prices[itemName.toLocaleLowerCase()].toFixed(2);
 const currentDiscount = discounts[itemName.toLocaleLowerCase()];

@@ -13,7 +13,7 @@ function createItem(name) {
   let discountPrice = (price - (discountPercent / 100) * price).toFixed(2);
 
   listItem.innerHTML = `
-    <img src="/img/products/${name.toLowerCase()}.png" alt="${name}" style="max-height: 250px" />
+    <img src="../img/products/${name.toLowerCase()}.png" alt="${name}" style="max-height: 250px" />
     <h2>${unormalizedName}</h2>
     <p>
       ${
@@ -26,8 +26,8 @@ function createItem(name) {
     ${price != discountPrice ? `<span class="discount">${discountPercent}% Off</span>` : ''}
 
     <div class="btns">
-      <a href="/store/mais/${name}" class="btn btn-dark">Mais</a>
-      <a href="/store/${name
+      <a href="../store/mais/${name}" class="btn btn-dark">Mais</a>
+      <a href="../store/${name
         .replaceAll(' ', '-')
         .toLowerCase()}" class="btn btn-success">Comprar</a>
     </div>
@@ -36,14 +36,4 @@ function createItem(name) {
   productList.appendChild(listItem);
 }
 
-createItem('Adesivo');
-
-createItem('Camisa');
-
-createItem('Garrafa');
-
-createItem('Almofada');
-
-createItem('Máscara');
-
-createItem('Sacola');
+['Adesivo', 'Camisa', 'Garrafa', 'Almofada', 'Máscara', 'Sacola'].forEach((f) => createItem(f));
