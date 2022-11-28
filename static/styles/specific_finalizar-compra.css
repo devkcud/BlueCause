@@ -1,0 +1,52 @@
+.body {
+  margin: auto;
+
+  width: 50%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  position: relative;
+}
+
+#finalizar {
+  position: absolute;
+  top: 46rem;
+  left: 65%;
+
+  width: 200px;
+}
+
+.information {
+  width: 100%;
+}
+
+.information div {
+  border-top: 1px solid #000;
+  padding-inline: 64px;
+  padding-block: 32px;
+}
+
+.information div h4 {
+  border-radius: 6px 20px 20px 6px;
+}
+
+.information div p {
+  text-align: end;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .information div {
+    padding-inline: 0;
+  }
+
+  #finalizar {
+    top: 46rem;
+    left: 4px;
+  }
+}

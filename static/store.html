@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blue Cause - Loja</title>
+
+    <link href="./img/logo-dark.png" rel="icon" media="(prefers-color-scheme: light)" />
+
+    <link href="./img/logo-light.png" rel="icon" media="(prefers-color-scheme: dark)" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/specific_store.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+
+    <script src="./js/storeItems.js" defer type="module"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/logo-dark.png" alt="Logo" width="48" height="48" />
+          Blue Cause
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contibute">Contribuir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container mt-5">
+      <h1 class="title">Venha ser da <span class="text-primary">#OndaAzul</span></h1>
+
+      <p>
+        Poste no twitter as coisas que comprar com <span class="text-primary">#OndaAzul</span> e
+        concorra a uma caneca!
+      </p>
+    </header>
+
+    <ul class="d-flex m-5 p-0 gap-5 flex-wrap" id="items"></ul>
+  </body>
+</html>
